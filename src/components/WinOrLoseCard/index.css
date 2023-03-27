@@ -1,0 +1,42 @@
+/* Write your code here. */
+.winOrLooseCard {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  margin: 10vh;
+  padding: 10px;
+  background-color: #ffffff33;
+}
+.resultImage {
+  height: 30vh;
+  margin: 2vh;
+}
+.won {
+  color: #ffffff;
+}
+.best {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 28px;
+}
+.winScore {
+  color: #6a59ff;
+  font-weight: bold;
+  font-size: 30px;
+}
+.play {
+  background-color: #ffce27;
+  height: 4vh;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border-width: 0px;
+}
+.frag {
+  display: flex;
+  flex-direction: row;
+}

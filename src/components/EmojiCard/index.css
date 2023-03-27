@@ -1,0 +1,19 @@
+/* Write your code here. */
+.imgCard {
+  list-style-type: none;
+  height: 16vh;
+  width: 10vw;
+  background-color: #ffffff33;
+  border-radius: 10px;
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  border-width: 0px;
+}
+.card {
+  list-style-type: none;
+}
+.emoji {
+  height: 12vh;
+}

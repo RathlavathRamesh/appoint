@@ -1,0 +1,31 @@
+/* Write your code here. */
+.navContainer {
+  background-color: #d1c0f0;
+  height: 12vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fpart {
+  margin-left: 4vh;
+  display: flex;
+}
+.navImage {
+  height: 7vh;
+}
+.gameheading {
+  color: #ffffff;
+  font-size: 20px;
+}
+.scores {
+  display: flex;
+  margin-right: 2vh;
+  color: #ffffff;
+  padding: 10px;
+}
+.score {
+  color: #ffffff;
+  font-weight: 500;
+  margin: 5px;
+}
