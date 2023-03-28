@@ -22,16 +22,25 @@ class EmojiGame extends Component {
 
   GameResult = id => {
     const {idList} = this.state
-    const isIdPresent = idList.every(eachId => id !== eachId)
-    console.log(isIdPresent)
-    if (isIdPresent) {
-      this.setState(prev => ({idList: [...idList, id], score: prev.score + 1}))
+    const isIdNotPresent = idList.every(eachId => id !== eachId)
+    console.log(isIdNotPresent)
+    if (isIdNotPresent) {
+      const {score} = this.state
+      const num = score + 1
+      console.log(num)
+      if (num === 12) {
+        this.setState(prev => ({score: num, wlcard: !prev.wlcard}))
+      } else {
+        this.setState({
+          idList: [...idList, id],
+          score: num,
+        })
+      }
     } else if (idList.length === 12) {
       this.setState(prev => ({wlcard: !prev.wlcard}))
     } else {
       this.setState(prev => ({wlcard: !prev.wlcard}))
     }
-    console.log(idList.length)
   }
 
   startLoss = toper => {
